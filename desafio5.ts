@@ -15,7 +15,18 @@ interface IUserYouMade {
 
 // Validações :
 
-let userYouMade : IUserYouMade; 
+let userYouMade: IUserYouMade = {
+    name: "",
+    age: -1,
+    work: "",
+    siblings: -1,
+    rating: -1,
+    applications: [""],
+    active: false,
+};
+console.log(userYouMade)
+
+// let userYouMade : IUserYouMade; 
 
 userYouMade.name = "Nome Do Usuário";
 userYouMade.age = 22;
@@ -24,5 +35,5 @@ userYouMade.siblings = 0;
 userYouMade.rating = 10;
 userYouMade.applications = ['RH', 'Dev'];
 userYouMade.active = true;
-
+console.log(userYouMade)
 
